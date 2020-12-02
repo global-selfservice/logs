@@ -1,11 +1,11 @@
 provider "vault" {}
 
 data "vault_generic_secret" "fluentd" {
-  path = "secret/selfservice/envs/${local.environment}/elasticsearch/fluentd"
+  path = "secret/self-service/envs/${local.environment}/elasticsearch/fluentd"
 }
 
 data "vault_generic_secret" "exporter" {
-  path = "secret/selfservice/envs/${local.environment}/elasticsearch/exporter"
+  path = "secret/self-service/envs/${local.environment}/elasticsearch/exporter"
 }
 
 locals {
