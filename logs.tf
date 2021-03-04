@@ -1,5 +1,5 @@
 module "logs" {
-  source = "github.com/global-devops-terraform/k8s-logs?ref=v0.42.6"
+  source = "github.com/global-devops-terraform/k8s-logs?ref=v0.42.7"
 
   read_access_groups = {
     "devaccess" = ["devaccess"]
