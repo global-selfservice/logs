@@ -1,5 +1,3 @@
-provider "vault" {}
-
 data "vault_generic_secret" "fluentd" {
   path = "secret/selfservice/envs/${local.environment}/elasticsearch/fluentd"
 }
